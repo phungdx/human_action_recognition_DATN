@@ -2,5 +2,4 @@ venv/
 data/test
 data/train
 data/sequences
-**.hdf5
-**.h5
+data/checkpoints

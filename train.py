@@ -70,7 +70,7 @@ def train(data_type, seq_length, model, saved_model=None,
             batch_size=batch_size,
             validation_data=(X_test, y_test),
             verbose=1,
-            callbacks=[tb, early_stopper, csv_logger],
+            callbacks=[tb, early_stopper, csv_logger, checkpointer],
             epochs=nb_epoch)
     else:
         # Use fit generator.
