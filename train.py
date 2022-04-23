@@ -74,7 +74,7 @@ def train(data_type, seq_length, model, saved_model=None,
             epochs=nb_epoch)
     else:
         # Use fit generator.
-        rm.model.fit_generator(
+        rm.model.fit(
             generator,
             steps_per_epoch=steps_per_epoch,
             epochs=nb_epoch,
