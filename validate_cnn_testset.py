@@ -24,7 +24,7 @@ def main():
                                                        class_mode='categorical')
     # load the trained model that has been saved in CNN_train_UCF101.py, your model name maybe is not the same as follow
     model = load_model('/data/d14122793/ucf101_full/checkpoints/inception.036-1.60.hdf5')
-    results = model.evaluate_generator(generator=test_generator, steps=test_data_num // batch_size)
+    results = model.evaluate(test_generator, steps=test_data_num // batch_size)
     print(results)
     print(model.metrics)
 
