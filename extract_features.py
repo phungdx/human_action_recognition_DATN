@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 # Set defaults.
 seq_length = 40
-class_limit = 101  # Number of classes to extract. Can be 1-101 or None for all.
+class_limit = 30  # Number of classes to extract. Can be 1-101 or None for all.
 
 # Get the dataset.
 data = DataSet(seq_length=seq_length, class_limit=class_limit)
